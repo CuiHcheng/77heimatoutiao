@@ -1,10 +1,15 @@
 import Vue from 'vue'
+import App from './App.vue'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import '@/style/index.less'
+
+import axios from 'axios'
+
 import router from '@/router'
-import App from './App.vue'
+Vue.prototype.$http = axios
 
 // Tip提示信息
 // 开发环境在控制台的提示信息  更详细
